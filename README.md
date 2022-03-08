@@ -23,6 +23,8 @@ Unzip the zip file and open the exe file in it to run it.
 
 * Only Mania mode will be adjust for SV. However, please note that not all SV maps can be covered.
 
+* SliderMultiplier must match in all modes except Mania mode.
+
 ### 1, Add Beatmap
 
 Clicking the "Add" button at the bottom of the center of the screen will bring up a file selection screen, where you can select an osu file to add a beatmap. If you want to change the playback order, select the beatmap you want to change and press the up/down buttons displayed below.
