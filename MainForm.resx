@@ -1,0 +1,1209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="orderDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="orderDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="orderDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="artistDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Artist</value>
+  </data>
+  <data name="artistDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="artistDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="titleDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="titleDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="titleDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="Creator.UserAddedColumn" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Creator.HeaderText" xml:space="preserve">
+    <value>Creator</value>
+  </data>
+  <data name="Creator.MinimumWidth" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="Creator.Width" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="diffNameDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>DiffName</value>
+  </data>
+  <data name="diffNameDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="diffNameDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="beatmapQueueBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing">
+    <value>153, 17</value>
+  </data>
+  <data name="Beatmaps.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 46</value>
+  </data>
+  <data name="Beatmaps.Size" type="System.Drawing.Size, System.Drawing">
+    <value>387, 338</value>
+  </data>
+  <data name="Beatmaps.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;Beatmaps.Name" xml:space="preserve">
+    <value>Beatmaps</value>
+  </data>
+  <data name="&gt;&gt;Beatmaps.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Beatmaps.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Beatmaps.ZOrder" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="Beatmaps_Label.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Beatmaps_Label.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 12pt</value>
+  </data>
+  <data name="Beatmaps_Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 27</value>
+  </data>
+  <data name="Beatmaps_Label.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 16</value>
+  </data>
+  <data name="Beatmaps_Label.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="Beatmaps_Label.Text" xml:space="preserve">
+    <value>Beatmaps</value>
+  </data>
+  <data name="&gt;&gt;Beatmaps_Label.Name" xml:space="preserve">
+    <value>Beatmaps_Label</value>
+  </data>
+  <data name="&gt;&gt;Beatmaps_Label.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Beatmaps_Label.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Beatmaps_Label.ZOrder" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="Beatmap_Add.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 9pt</value>
+  </data>
+  <data name="Beatmap_Add.Location" type="System.Drawing.Point, System.Drawing">
+    <value>357, 387</value>
+  </data>
+  <data name="Beatmap_Add.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 23</value>
+  </data>
+  <data name="Beatmap_Add.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="Beatmap_Add.Text" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="&gt;&gt;Beatmap_Add.Name" xml:space="preserve">
+    <value>Beatmap_Add</value>
+  </data>
+  <data name="&gt;&gt;Beatmap_Add.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Beatmap_Add.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Beatmap_Add.ZOrder" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="OpenOsuFileDialog.TrayLocation" type="System.Drawing.Point, System.Drawing">
+    <value>17, 17</value>
+  </data>
+  <data name="OpenOsuFileDialog.Filter" xml:space="preserve">
+    <value>.osu File|*.osu|All Files|*.*</value>
+  </data>
+  <data name="OpenOsuFileDialog.Title" xml:space="preserve">
+    <value>Select Beatmap</value>
+  </data>
+  <data name="BeatmapOrderUp.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 10pt</value>
+  </data>
+  <data name="BeatmapOrderUp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>254, 387</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="BeatmapOrderUp.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="BeatmapOrderUp.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 0, 0</value>
+  </data>
+  <data name="BeatmapOrderUp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 23</value>
+  </data>
+  <data name="BeatmapOrderUp.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="BeatmapOrderUp.Text" xml:space="preserve">
+    <value>↑</value>
+  </data>
+  <data name="BeatmapOrderUp.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;BeatmapOrderUp.Name" xml:space="preserve">
+    <value>BeatmapOrderUp</value>
+  </data>
+  <data name="&gt;&gt;BeatmapOrderUp.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BeatmapOrderUp.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;BeatmapOrderUp.ZOrder" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="BeatmapOrderDown.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 10pt</value>
+  </data>
+  <data name="BeatmapOrderDown.Location" type="System.Drawing.Point, System.Drawing">
+    <value>280, 387</value>
+  </data>
+  <data name="BeatmapOrderDown.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 0, 0</value>
+  </data>
+  <data name="BeatmapOrderDown.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 23</value>
+  </data>
+  <data name="BeatmapOrderDown.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="BeatmapOrderDown.Text" xml:space="preserve">
+    <value>↓</value>
+  </data>
+  <data name="BeatmapOrderDown.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;BeatmapOrderDown.Name" xml:space="preserve">
+    <value>BeatmapOrderDown</value>
+  </data>
+  <data name="&gt;&gt;BeatmapOrderDown.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BeatmapOrderDown.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;BeatmapOrderDown.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="BeatmapDeleteButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 9pt</value>
+  </data>
+  <data name="BeatmapDeleteButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>309, 387</value>
+  </data>
+  <data name="BeatmapDeleteButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 23</value>
+  </data>
+  <data name="BeatmapDeleteButton.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="BeatmapDeleteButton.Text" xml:space="preserve">
+    <value>Del</value>
+  </data>
+  <data name="BeatmapDeleteButton.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;BeatmapDeleteButton.Name" xml:space="preserve">
+    <value>BeatmapDeleteButton</value>
+  </data>
+  <data name="&gt;&gt;BeatmapDeleteButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BeatmapDeleteButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;BeatmapDeleteButton.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="TiTleLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TiTleLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 12pt</value>
+  </data>
+  <data name="TiTleLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>442, 80</value>
+  </data>
+  <data name="TiTleLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 16</value>
+  </data>
+  <data name="TiTleLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="TiTleLabel.Text" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="&gt;&gt;TiTleLabel.Name" xml:space="preserve">
+    <value>TiTleLabel</value>
+  </data>
+  <data name="&gt;&gt;TiTleLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TiTleLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;TiTleLabel.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="TitleTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 12pt</value>
+  </data>
+  <data name="TitleTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>445, 97</value>
+  </data>
+  <data name="TitleTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>316, 23</value>
+  </data>
+  <data name="TitleTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;TitleTextBox.Name" xml:space="preserve">
+    <value>TitleTextBox</value>
+  </data>
+  <data name="&gt;&gt;TitleTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TitleTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;TitleTextBox.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="ArtistLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ArtistLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 12pt</value>
+  </data>
+  <data name="ArtistLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>442, 29</value>
+  </data>
+  <data name="ArtistLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 16</value>
+  </data>
+  <data name="ArtistLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="ArtistLabel.Text" xml:space="preserve">
+    <value>Artist</value>
+  </data>
+  <data name="&gt;&gt;ArtistLabel.Name" xml:space="preserve">
+    <value>ArtistLabel</value>
+  </data>
+  <data name="&gt;&gt;ArtistLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ArtistLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ArtistLabel.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="ArtistTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 12pt</value>
+  </data>
+  <data name="ArtistTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>445, 46</value>
+  </data>
+  <data name="ArtistTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 23</value>
+  </data>
+  <data name="ArtistTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;ArtistTextBox.Name" xml:space="preserve">
+    <value>ArtistTextBox</value>
+  </data>
+  <data name="&gt;&gt;ArtistTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ArtistTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ArtistTextBox.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="HPLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="HPLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 12pt</value>
+  </data>
+  <data name="HPLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>442, 181</value>
+  </data>
+  <data name="HPLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 16</value>
+  </data>
+  <data name="HPLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="HPLabel.Text" xml:space="preserve">
+    <value>HP</value>
+  </data>
+  <data name="&gt;&gt;HPLabel.Name" xml:space="preserve">
+    <value>HPLabel</value>
+  </data>
+  <data name="&gt;&gt;HPLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;HPLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;HPLabel.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="ODLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ODLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 12pt</value>
+  </data>
+  <data name="ODLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>527, 181</value>
+  </data>
+  <data name="ODLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 16</value>
+  </data>
+  <data name="ODLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="ODLabel.Text" xml:space="preserve">
+    <value>OD</value>
+  </data>
+  <data name="&gt;&gt;ODLabel.Name" xml:space="preserve">
+    <value>ODLabel</value>
+  </data>
+  <data name="&gt;&gt;ODLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ODLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ODLabel.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="ARLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ARLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 12pt</value>
+  </data>
+  <data name="ARLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>695, 181</value>
+  </data>
+  <data name="ARLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 16</value>
+  </data>
+  <data name="ARLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="ARLabel.Text" xml:space="preserve">
+    <value>AR</value>
+  </data>
+  <data name="&gt;&gt;ARLabel.Name" xml:space="preserve">
+    <value>ARLabel</value>
+  </data>
+  <data name="&gt;&gt;ARLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ARLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ARLabel.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="SourceTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 12pt</value>
+  </data>
+  <data name="SourceTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>549, 257</value>
+  </data>
+  <data name="SourceTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>212, 23</value>
+  </data>
+  <data name="SourceTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;SourceTextBox.Name" xml:space="preserve">
+    <value>SourceTextBox</value>
+  </data>
+  <data name="&gt;&gt;SourceTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SourceTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;SourceTextBox.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="SourceLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="SourceLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 12pt</value>
+  </data>
+  <data name="SourceLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>546, 238</value>
+  </data>
+  <data name="SourceLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 16</value>
+  </data>
+  <data name="SourceLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="SourceLabel.Text" xml:space="preserve">
+    <value>Source</value>
+  </data>
+  <data name="&gt;&gt;SourceLabel.Name" xml:space="preserve">
+    <value>SourceLabel</value>
+  </data>
+  <data name="&gt;&gt;SourceLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SourceLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;SourceLabel.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="TagsLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TagsLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 12pt</value>
+  </data>
+  <data name="TagsLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>546, 294</value>
+  </data>
+  <data name="TagsLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 16</value>
+  </data>
+  <data name="TagsLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="TagsLabel.Text" xml:space="preserve">
+    <value>Tags</value>
+  </data>
+  <data name="&gt;&gt;TagsLabel.Name" xml:space="preserve">
+    <value>TagsLabel</value>
+  </data>
+  <data name="&gt;&gt;TagsLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TagsLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;TagsLabel.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="ProgressBar1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="ProgressBar1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 430</value>
+  </data>
+  <data name="ProgressBar1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>800, 20</value>
+  </data>
+  <data name="ProgressBar1.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="ProgressBar1.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;ProgressBar1.Name" xml:space="preserve">
+    <value>ProgressBar1</value>
+  </data>
+  <data name="&gt;&gt;ProgressBar1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ProgressBar1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ProgressBar1.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="ExecuteButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 15pt, style=Bold</value>
+  </data>
+  <data name="ExecuteButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>492, 359</value>
+  </data>
+  <data name="ExecuteButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>220, 39</value>
+  </data>
+  <data name="ExecuteButton.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="ExecuteButton.Text" xml:space="preserve">
+    <value>Execute</value>
+  </data>
+  <data name="&gt;&gt;ExecuteButton.Name" xml:space="preserve">
+    <value>ExecuteButton</value>
+  </data>
+  <data name="&gt;&gt;ExecuteButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ExecuteButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ExecuteButton.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="BackgroundWorker1.TrayLocation" type="System.Drawing.Point, System.Drawing">
+    <value>372, 17</value>
+  </data>
+  <data name="CSLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CSLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 12pt</value>
+  </data>
+  <data name="CSLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>611, 181</value>
+  </data>
+  <data name="CSLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 16</value>
+  </data>
+  <data name="CSLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="CSLabel.Text" xml:space="preserve">
+    <value>CS</value>
+  </data>
+  <data name="&gt;&gt;CSLabel.Name" xml:space="preserve">
+    <value>CSLabel</value>
+  </data>
+  <data name="&gt;&gt;CSLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CSLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;CSLabel.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="SongDurationNum.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 12pt</value>
+  </data>
+  <data name="SongDurationNum.Location" type="System.Drawing.Point, System.Drawing">
+    <value>445, 313</value>
+  </data>
+  <data name="SongDurationNum.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 23</value>
+  </data>
+  <data name="SongDurationNum.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;SongDurationNum.Name" xml:space="preserve">
+    <value>SongDurationNum</value>
+  </data>
+  <data name="&gt;&gt;SongDurationNum.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SongDurationNum.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;SongDurationNum.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="SongDurationLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="SongDurationLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 12pt</value>
+  </data>
+  <data name="SongDurationLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>442, 294</value>
+  </data>
+  <data name="SongDurationLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 16</value>
+  </data>
+  <data name="SongDurationLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="SongDurationLabel.Text" xml:space="preserve">
+    <value>Duration(sec)</value>
+  </data>
+  <data name="&gt;&gt;SongDurationLabel.Name" xml:space="preserve">
+    <value>SongDurationLabel</value>
+  </data>
+  <data name="&gt;&gt;SongDurationLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SongDurationLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;SongDurationLabel.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="HPNum.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 12pt</value>
+  </data>
+  <data name="HPNum.Location" type="System.Drawing.Point, System.Drawing">
+    <value>445, 200</value>
+  </data>
+  <data name="HPNum.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 23</value>
+  </data>
+  <data name="HPNum.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="HPNum.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;HPNum.Name" xml:space="preserve">
+    <value>HPNum</value>
+  </data>
+  <data name="&gt;&gt;HPNum.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;HPNum.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;HPNum.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="ODNum.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 12pt</value>
+  </data>
+  <data name="ODNum.Location" type="System.Drawing.Point, System.Drawing">
+    <value>530, 200</value>
+  </data>
+  <data name="ODNum.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 23</value>
+  </data>
+  <data name="ODNum.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="ODNum.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;ODNum.Name" xml:space="preserve">
+    <value>ODNum</value>
+  </data>
+  <data name="&gt;&gt;ODNum.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ODNum.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ODNum.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="ARNum.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 12pt</value>
+  </data>
+  <data name="ARNum.Location" type="System.Drawing.Point, System.Drawing">
+    <value>698, 200</value>
+  </data>
+  <data name="ARNum.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 23</value>
+  </data>
+  <data name="ARNum.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="ARNum.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;ARNum.Name" xml:space="preserve">
+    <value>ARNum</value>
+  </data>
+  <data name="&gt;&gt;ARNum.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ARNum.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ARNum.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="CSNum.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 12pt</value>
+  </data>
+  <data name="CSNum.Location" type="System.Drawing.Point, System.Drawing">
+    <value>614, 200</value>
+  </data>
+  <data name="CSNum.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 23</value>
+  </data>
+  <data name="CSNum.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="CSNum.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;CSNum.Name" xml:space="preserve">
+    <value>CSNum</value>
+  </data>
+  <data name="&gt;&gt;CSNum.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CSNum.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;CSNum.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="CreatorTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 12pt</value>
+  </data>
+  <data name="CreatorTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>614, 46</value>
+  </data>
+  <data name="CreatorTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>147, 23</value>
+  </data>
+  <data name="CreatorTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;CreatorTextBox.Name" xml:space="preserve">
+    <value>CreatorTextBox</value>
+  </data>
+  <data name="&gt;&gt;CreatorTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CreatorTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;CreatorTextBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="CreatorLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CreatorLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 12pt</value>
+  </data>
+  <data name="CreatorLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>611, 29</value>
+  </data>
+  <data name="CreatorLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 16</value>
+  </data>
+  <data name="CreatorLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="CreatorLabel.Text" xml:space="preserve">
+    <value>Creator</value>
+  </data>
+  <data name="&gt;&gt;CreatorLabel.Name" xml:space="preserve">
+    <value>CreatorLabel</value>
+  </data>
+  <data name="&gt;&gt;CreatorLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CreatorLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;CreatorLabel.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="DifficultyTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 12pt</value>
+  </data>
+  <data name="DifficultyTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>445, 147</value>
+  </data>
+  <data name="DifficultyTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>316, 23</value>
+  </data>
+  <data name="DifficultyTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="&gt;&gt;DifficultyTextBox.Name" xml:space="preserve">
+    <value>DifficultyTextBox</value>
+  </data>
+  <data name="&gt;&gt;DifficultyTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DifficultyTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;DifficultyTextBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="DifficultyLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="DifficultyLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 12pt</value>
+  </data>
+  <data name="DifficultyLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>442, 130</value>
+  </data>
+  <data name="DifficultyLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 16</value>
+  </data>
+  <data name="DifficultyLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="DifficultyLabel.Text" xml:space="preserve">
+    <value>Difficulty</value>
+  </data>
+  <data name="&gt;&gt;DifficultyLabel.Name" xml:space="preserve">
+    <value>DifficultyLabel</value>
+  </data>
+  <data name="&gt;&gt;DifficultyLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DifficultyLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;DifficultyLabel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="TagsTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 12pt</value>
+  </data>
+  <data name="TagsTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>549, 313</value>
+  </data>
+  <data name="TagsTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>212, 23</value>
+  </data>
+  <data name="TagsTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="&gt;&gt;TagsTextBox.Name" xml:space="preserve">
+    <value>TagsTextBox</value>
+  </data>
+  <data name="&gt;&gt;TagsTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TagsTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;TagsTextBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="SliderTickRateNum.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 12pt</value>
+  </data>
+  <data name="SliderTickRateNum.Location" type="System.Drawing.Point, System.Drawing">
+    <value>445, 258</value>
+  </data>
+  <data name="SliderTickRateNum.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 23</value>
+  </data>
+  <data name="SliderTickRateNum.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="&gt;&gt;SliderTickRateNum.Name" xml:space="preserve">
+    <value>SliderTickRateNum</value>
+  </data>
+  <data name="&gt;&gt;SliderTickRateNum.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SliderTickRateNum.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;SliderTickRateNum.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="SliderTickRateLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="SliderTickRateLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 12pt</value>
+  </data>
+  <data name="SliderTickRateLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>442, 239</value>
+  </data>
+  <data name="SliderTickRateLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 16</value>
+  </data>
+  <data name="SliderTickRateLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="SliderTickRateLabel.Text" xml:space="preserve">
+    <value>SliderTickRate</value>
+  </data>
+  <data name="&gt;&gt;SliderTickRateLabel.Name" xml:space="preserve">
+    <value>SliderTickRateLabel</value>
+  </data>
+  <data name="&gt;&gt;SliderTickRateLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SliderTickRateLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;SliderTickRateLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="SaveOszFileDialog.TrayLocation" type="System.Drawing.Point, System.Drawing">
+    <value>540, 17</value>
+  </data>
+  <data name="SaveOszFileDialog.Filter" xml:space="preserve">
+    <value>.mp3 file|*.mp3</value>
+  </data>
+  <data name="SaveOszFileDialog.Title" xml:space="preserve">
+    <value>Select save mp3 file path</value>
+  </data>
+  <data name="$this.Localizable" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 12</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>800, 450</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>OsuBeatmapMixer</value>
+  </data>
+  <data name="&gt;&gt;orderDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>orderDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;orderDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;artistDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>artistDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;artistDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;titleDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>titleDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;titleDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Creator.Name" xml:space="preserve">
+    <value>Creator</value>
+  </data>
+  <data name="&gt;&gt;Creator.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;diffNameDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>diffNameDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;diffNameDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;beatmapQueueBindingSource.Name" xml:space="preserve">
+    <value>beatmapQueueBindingSource</value>
+  </data>
+  <data name="&gt;&gt;beatmapQueueBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;OpenOsuFileDialog.Name" xml:space="preserve">
+    <value>OpenOsuFileDialog</value>
+  </data>
+  <data name="&gt;&gt;OpenOsuFileDialog.Type" xml:space="preserve">
+    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BackgroundWorker1.Name" xml:space="preserve">
+    <value>BackgroundWorker1</value>
+  </data>
+  <data name="&gt;&gt;BackgroundWorker1.Type" xml:space="preserve">
+    <value>System.ComponentModel.BackgroundWorker, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SaveOszFileDialog.Name" xml:space="preserve">
+    <value>SaveOszFileDialog</value>
+  </data>
+  <data name="&gt;&gt;SaveOszFileDialog.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SaveFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>MainForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ConfirmationText1" xml:space="preserve">
+    <value>Are you sure you want to delete selected beatmap?</value>
+  </data>
+  <data name="ErrorText1" xml:space="preserve">
+    <value>At least 2 beatmaps are required for execution.</value>
+  </data>
+  <data name="ErrorText2" xml:space="preserve">
+    <value>Different game modes are mixed in the list.</value>
+  </data>
+  <data name="ErrorText3" xml:space="preserve">
+    <value>Different mania mode keys are mixed in the list.</value>
+  </data>
+  <data name="ErrorText4" xml:space="preserve">
+    <value>Different slidermultiplier are mixed in the list.</value>
+  </data>
+  <data name="ErrorText5" xml:space="preserve">
+    <value>Requires at least the artist name and title.</value>
+  </data>
+  <data name="ErrorText6" xml:space="preserve">
+    <value>Please specify the location of the mp3 file.</value>
+  </data>
+  <data name="FinishedText1" xml:space="preserve">
+    <value>Mix Successful!</value>
+  </data>
+  <data name="MessageConfirmation" xml:space="preserve">
+    <value>Confirmation</value>
+  </data>
+  <data name="MessageError" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="MessageFinished" xml:space="preserve">
+    <value>Finished</value>
+  </data>
+  <data name="MessageWarning" xml:space="preserve">
+    <value>Warning</value>
+  </data>
+  <data name="WarningText1" xml:space="preserve">
+    <value>The same beatmap already exists in the list. Are you sure you want to add it?</value>
+  </data>
+  <data name="ConfirmationText2" xml:space="preserve">
+    <value>Are you sure you want to save the file in the folder at the following location?</value>
+  </data>
+  <data name="ErrorText7" xml:space="preserve">
+    <value>The process has been canceled.</value>
+  </data>
+  <data name="WarningText2" xml:space="preserve">
+    <value>{0} already exists. Are you sure you want to overwrite it?</value>
+  </data>
+</root>
