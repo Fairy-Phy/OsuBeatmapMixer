@@ -68,6 +68,7 @@ namespace OsuBeatmapMixer {
 			this.SliderTickRateNum = new System.Windows.Forms.NumericUpDown();
 			this.SliderTickRateLabel = new System.Windows.Forms.Label();
 			this.SaveOszFileDialog = new System.Windows.Forms.SaveFileDialog();
+			this.ChangeLanguageButton = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this.Beatmaps)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.beatmapQueueBindingSource)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.SongDurationNum)).BeginInit();
@@ -415,11 +416,20 @@ namespace OsuBeatmapMixer {
 			resources.ApplyResources(this.SaveOszFileDialog, "SaveOszFileDialog");
 			this.SaveOszFileDialog.RestoreDirectory = true;
 			// 
+			// ChangeLanguageButton
+			// 
+			resources.ApplyResources(this.ChangeLanguageButton, "ChangeLanguageButton");
+			this.ChangeLanguageButton.Name = "ChangeLanguageButton";
+			this.ChangeLanguageButton.Tag = "";
+			this.ChangeLanguageButton.UseVisualStyleBackColor = true;
+			this.ChangeLanguageButton.Click += new System.EventHandler(this.ChangeLanguageButton_Click);
+			// 
 			// MainForm
 			// 
 			resources.ApplyResources(this, "$this");
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.SystemColors.Control;
+			this.Controls.Add(this.ChangeLanguageButton);
 			this.Controls.Add(this.SliderTickRateNum);
 			this.Controls.Add(this.SliderTickRateLabel);
 			this.Controls.Add(this.TagsTextBox);
@@ -512,6 +522,7 @@ namespace OsuBeatmapMixer {
 		private System.Windows.Forms.DataGridViewTextBoxColumn titleDataGridViewTextBoxColumn;
 		private System.Windows.Forms.DataGridViewTextBoxColumn Creator;
 		private System.Windows.Forms.DataGridViewTextBoxColumn diffNameDataGridViewTextBoxColumn;
+		private System.Windows.Forms.Button ChangeLanguageButton;
 	}
 }
 

@@ -99,7 +99,7 @@ namespace OsuBeatmapMixer.Osu {
 				beatmap.AudioFilename = Text.Replace("AudioFilename:", "").Trim();
 			}
 			else if (Text.StartsWith("Mode:")) {
-				beatmap.Mode = (GameMode) int.Parse(Text.Replace("Mode:", "").Trim());
+				beatmap.Mode = (GameMode) ParseToInt(Text.Replace("Mode:", "").Trim());
 			}
 		}
 
@@ -126,22 +126,22 @@ namespace OsuBeatmapMixer.Osu {
 
 		static void DifficultyParse(ref Beatmap beatmap, string Text) {
 			if (Text.StartsWith("HPDrainRate:")) {
-				beatmap.HPDrainRate = double.Parse(Text.Replace("HPDrainRate:", "").Trim());
+				beatmap.HPDrainRate = DoubleParse(Text.Replace("HPDrainRate:", "").Trim());
 			}
 			else if (Text.StartsWith("CircleSize:")) {
-				beatmap.CircleSize = double.Parse(Text.Replace("CircleSize:", "").Trim());
+				beatmap.CircleSize = DoubleParse(Text.Replace("CircleSize:", "").Trim());
 			}
 			else if (Text.StartsWith("OverallDifficulty:")) {
-				beatmap.OverallDifficulty = double.Parse(Text.Replace("OverallDifficulty:", "").Trim());
+				beatmap.OverallDifficulty = DoubleParse(Text.Replace("OverallDifficulty:", "").Trim());
 			}
 			else if (Text.StartsWith("ApproachRate:")) {
-				beatmap.ApproachRate = double.Parse(Text.Replace("ApproachRate:", "").Trim());
+				beatmap.ApproachRate = DoubleParse(Text.Replace("ApproachRate:", "").Trim());
 			}
 			else if (Text.StartsWith("SliderMultiplier:")) {
-				beatmap.SliderMultiplier = double.Parse(Text.Replace("SliderMultiplier:", "").Trim());
+				beatmap.SliderMultiplier = DoubleParse(Text.Replace("SliderMultiplier:", "").Trim());
 			}
 			else if (Text.StartsWith("SliderTickRate:")) {
-				beatmap.SliderTickRate = double.Parse(Text.Replace("SliderTickRate:", "").Trim());
+				beatmap.SliderTickRate = DoubleParse(Text.Replace("SliderTickRate:", "").Trim());
 			}
 		}
 
@@ -155,20 +155,19 @@ namespace OsuBeatmapMixer.Osu {
 			if (TextSplit.Length != 8)
 				throw new ParseException("TextSplit length is not 8");
 
-			int UnInherited = int.Parse(TextSplit[6]);
-			bool Parsed = double.TryParse(TextSplit[1], NumberStyles.Float, CultureInfo.InvariantCulture, out double BeatLength);
-			if (!Parsed) BeatLength = double.NaN;
+			int UnInherited = ParseToInt(TextSplit[6]);
+			double BeatLength = DoubleParse(TextSplit[1]);
 			if (UnInherited == 0) BeatLength = Math.Abs(BeatLength);
 
 			beatmap.TimingPoints.Add(new TimingPoint(
 				(int) decimal.Parse(TextSplit[0]),
 				BeatLength,
-				int.Parse(TextSplit[2]),
-				int.Parse(TextSplit[3]),
-				int.Parse(TextSplit[4]),
-				int.Parse(TextSplit[5]),
+				ParseToInt(TextSplit[2]),
+				ParseToInt(TextSplit[3]),
+				ParseToInt(TextSplit[4]),
+				ParseToInt(TextSplit[5]),
 				UnInherited,
-				int.Parse(TextSplit[7])
+				ParseToInt(TextSplit[7])
 			));
 		}
 
@@ -184,28 +183,28 @@ namespace OsuBeatmapMixer.Osu {
 
 			if (TextSplit.Length == 5) { // ShortNormal
 				beatmap.HitObjects.Add(new HitObject(
-					int.Parse(TextSplit[0]),
-					int.Parse(TextSplit[1]),
-					int.Parse(TextSplit[2]),
-					int.Parse(TextSplit[3]),
-					int.Parse(TextSplit[4]),
+					ParseToInt(TextSplit[0]),
+					ParseToInt(TextSplit[1]),
+					ParseToInt(TextSplit[2]),
+					ParseToInt(TextSplit[3]),
+					ParseToInt(TextSplit[4]),
 					null
 				));
 			}
 			else if (TextSplit.Length == 6) { // Normal or Mania LN or ShortSpinner
-				int Type = int.Parse(TextSplit[3]);
+				int Type = ParseToInt(TextSplit[3]);
 				if ((Type & 0b1000_0000) == 128) {
 					List<string> EndIndexSplit = new List<string>(TextSplit[5].Split(':'));
-					int EndOffset = int.Parse(EndIndexSplit[0]);
+					int EndOffset = ParseToInt(EndIndexSplit[0]);
 					EndIndexSplit.RemoveAt(0);
 
 					beatmap.HitObjects.Add(new HitObject(
 						HitObject.ObjectType.ManiaLN,
-						int.Parse(TextSplit[0]),
-						int.Parse(TextSplit[1]),
-						(int) double.Parse(TextSplit[2], NumberStyles.Float, CultureInfo.InvariantCulture),
+						ParseToInt(TextSplit[0]),
+						ParseToInt(TextSplit[1]),
+						ParseToInt(TextSplit[2]),
 						Type,
-						int.Parse(TextSplit[4]),
+						ParseToInt(TextSplit[4]),
 						EndOffset,
 						null,
 						string.Join(":", EndIndexSplit)
@@ -214,23 +213,23 @@ namespace OsuBeatmapMixer.Osu {
 				else if ((Type & 0b0000_1000) == 8) {
 					beatmap.HitObjects.Add(new HitObject(
 						HitObject.ObjectType.ShortSpinner,
-						int.Parse(TextSplit[0]),
-						int.Parse(TextSplit[1]),
-						int.Parse(TextSplit[2]),
-						int.Parse(TextSplit[3]),
-						int.Parse(TextSplit[4]),
-						int.Parse(TextSplit[5]),
+						ParseToInt(TextSplit[0]),
+						ParseToInt(TextSplit[1]),
+						ParseToInt(TextSplit[2]),
+						ParseToInt(TextSplit[3]),
+						ParseToInt(TextSplit[4]),
+						ParseToInt(TextSplit[5]),
 						null,
 						null
 				));
 				}
 				else {
 					beatmap.HitObjects.Add(new HitObject(
-						int.Parse(TextSplit[0]),
-						int.Parse(TextSplit[1]),
-						int.Parse(TextSplit[2]),
+						ParseToInt(TextSplit[0]),
+						ParseToInt(TextSplit[1]),
+						ParseToInt(TextSplit[2]),
 						Type,
-						int.Parse(TextSplit[4]),
+						ParseToInt(TextSplit[4]),
 						TextSplit[5]
 					));
 				}
@@ -238,57 +237,57 @@ namespace OsuBeatmapMixer.Osu {
 			else if (TextSplit.Length == 7) { // Spinner
 				beatmap.HitObjects.Add(new HitObject(
 						HitObject.ObjectType.Spinner,
-						int.Parse(TextSplit[0]),
-						int.Parse(TextSplit[1]),
-						int.Parse(TextSplit[2]),
-						int.Parse(TextSplit[3]),
-						int.Parse(TextSplit[4]),
-						int.Parse(TextSplit[5]),
+						ParseToInt(TextSplit[0]),
+						ParseToInt(TextSplit[1]),
+						ParseToInt(TextSplit[2]),
+						ParseToInt(TextSplit[3]),
+						ParseToInt(TextSplit[4]),
+						ParseToInt(TextSplit[5]),
 						null,
 						TextSplit[6]
 				));
 			}
 			else if (TextSplit.Length == 8) { // ShortSlider
-				int StartOffset = int.Parse(TextSplit[2]);
+				int StartOffset = ParseToInt(TextSplit[2]);
 
 				TimingPoint AppliedTimingPoint = GetAppliedTimingPoint(beatmap, StartOffset, true);
 
 				TimingPoint AppliedScale = GetAppliedTimingPoint(beatmap, StartOffset, false);
 
-				double SliderLength = double.Parse(TextSplit[7]);
+				double SliderLength = DoubleParse(TextSplit[7]);
 
 				int EndOffset = GetSliderEndOffset(StartOffset, SliderLength, beatmap.SliderMultiplier, AppliedTimingPoint.BeatLength, AppliedScale is null ? default : AppliedScale.BeatLength);
 
 				beatmap.HitObjects.Add(new HitObject(
 					HitObject.ObjectType.ShortSlider,
-					int.Parse(TextSplit[0]),
-					int.Parse(TextSplit[1]),
+					ParseToInt(TextSplit[0]),
+					ParseToInt(TextSplit[1]),
 					StartOffset,
-					int.Parse(TextSplit[3]),
-					int.Parse(TextSplit[4]),
+					ParseToInt(TextSplit[3]),
+					ParseToInt(TextSplit[4]),
 					EndOffset,
 					$"{TextSplit[5]},{TextSplit[6]},{TextSplit[7]}",
 					null
 				));
 			}
 			else if (TextSplit.Length == 11) { // Slider
-				int StartOffset = int.Parse(TextSplit[2]);
+				int StartOffset = ParseToInt(TextSplit[2]);
 
 				TimingPoint AppliedTimingPoint = GetAppliedTimingPoint(beatmap, StartOffset, true);
 
 				TimingPoint AppliedScale = GetAppliedTimingPoint(beatmap, StartOffset, false);
 
-				double SliderLength = double.Parse(TextSplit[7]);
+				double SliderLength = DoubleParse(TextSplit[7]);
 
 				int EndOffset = GetSliderEndOffset(StartOffset, SliderLength, beatmap.SliderMultiplier, AppliedTimingPoint.BeatLength, AppliedScale is null ? default : AppliedScale.BeatLength);
 
 				beatmap.HitObjects.Add(new HitObject(
 					HitObject.ObjectType.Slider,
-					int.Parse(TextSplit[0]),
-					int.Parse(TextSplit[1]),
+					ParseToInt(TextSplit[0]),
+					ParseToInt(TextSplit[1]),
 					StartOffset,
-					int.Parse(TextSplit[3]),
-					int.Parse(TextSplit[4]),
+					ParseToInt(TextSplit[3]),
+					ParseToInt(TextSplit[4]),
 					EndOffset,
 					$"{TextSplit[5]},{TextSplit[6]},{TextSplit[7]},{TextSplit[8]},{TextSplit[9]}",
 					TextSplit[10]
@@ -311,6 +310,16 @@ namespace OsuBeatmapMixer.Osu {
 			TimingPoints.Sort((a, b) => b.Offset - a.Offset);
 
 			return TimingPoints[0];
+		}
+
+		static double DoubleParse(string Value) {
+			if (double.TryParse(Value, NumberStyles.Float, CultureInfo.InvariantCulture, out double Res))
+				return Res;
+			return double.NaN;
+		}
+
+		static int ParseToInt(string Value) {
+			return (int) DoubleParse(Value);
 		}
 	}
 }

@@ -273,8 +273,23 @@
   <data name="SaveOszFileDialog.Title" xml:space="preserve">
     <value>mp3ファイルの保存先を選択してください</value>
   </data>
+  <data name="ChangeLanguageButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>650, 421</value>
+  </data>
+  <data name="ChangeLanguageButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 29</value>
+  </data>
+  <data name="ChangeLanguageButton.Text" xml:space="preserve">
+    <value>Change lang to English</value>
+  </data>
+  <data name="ChangeLang" xml:space="preserve">
+    <value>en-US</value>
+  </data>
   <data name="ConfirmationText1" xml:space="preserve">
     <value>選択した譜面を削除しますか？</value>
+  </data>
+  <data name="ConfirmationText2" xml:space="preserve">
+    <value>以下の場所のフォルダーに保存しますがよろしいですか？</value>
   </data>
   <data name="ErrorText1" xml:space="preserve">
     <value>実行には2つ以上の譜面が必要です。</value>
@@ -294,6 +309,9 @@
   <data name="ErrorText6" xml:space="preserve">
     <value>mp3ファイルの保存先を指定してください。</value>
   </data>
+  <data name="ErrorText7" xml:space="preserve">
+    <value>処理が取り消されました。</value>
+  </data>
   <data name="FinishedText1" xml:space="preserve">
     <value>正常に完了しました！</value>
   </data>
@@ -311,12 +329,6 @@
   </data>
   <data name="WarningText1" xml:space="preserve">
     <value>リストに同じ譜面が存在します。本当に追加しますか？</value>
-  </data>
-  <data name="ConfirmationText2" xml:space="preserve">
-    <value>以下の場所のフォルダーに保存しますがよろしいですか？</value>
-  </data>
-  <data name="ErrorText7" xml:space="preserve">
-    <value>処理が取り消されました。</value>
   </data>
   <data name="WarningText2" xml:space="preserve">
     <value>{0}は既に存在します。上書きしますか？</value>

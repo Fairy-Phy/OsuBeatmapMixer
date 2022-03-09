@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -16,6 +18,39 @@ namespace OsuBeatmapMixer {
 		static List<char> InvalidChars => new List<char>(System.IO.Path.GetInvalidFileNameChars().Concat(System.IO.Path.GetInvalidPathChars()));
 
 		readonly MessageData messageData;
+
+		public static CultureInfo GlobalUICulture {
+			get { return Thread.CurrentThread.CurrentUICulture; }
+			set {
+				if (GlobalUICulture != value) {
+					Thread.CurrentThread.CurrentUICulture = value;
+				}
+			}
+		}
+
+		/*void SetCulture(string Culture) {
+			Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo(Culture);
+
+			ComponentResourceManager Resources = new ComponentResourceManager(GetType());
+
+			var Controls = GetControl(this);
+			for (int i = 0; i < Controls.Count; i++) {
+				if (Controls[i] is DataGridView beatmaps) {
+					for (int n = 0; n < beatmaps.Columns.Count; n++) {
+						Resources.ApplyResources(beatmaps.Columns[n], beatmaps.Columns[n].Name);
+					}
+				}
+				Resources.ApplyResources(Controls[i], Controls[i].Name);
+			}
+		}
+
+		List<Control> GetControl(Control control) {
+			var Controls = control.Controls.Cast<Control>().ToList();
+			for (int i = 0; i < Controls.Count; i++) {
+				Controls = Controls.Concat(GetControl(Controls[i])).ToList();
+			}
+			return Controls;
+		}*/
 
 		[System.Diagnostics.Conditional("DEBUG")]
 		void GetDebugBuildText() {
@@ -33,6 +68,8 @@ namespace OsuBeatmapMixer {
 			beatmapQueueBindingSource.DataSource = Queues;
 
 			Beatmaps.ClearSelection();
+
+			//SetCulture("en-US");
 		}
 
 		bool CheckDuplicationBeatmap(BeatmapQueue add_beatmap) {
@@ -222,6 +259,8 @@ namespace OsuBeatmapMixer {
 			ProgressBar1.Visible = false;
 			ProgressBar1.Value = 0;
 
+			ChangeLanguageButton.Visible = true;
+
 			AllControlChange(true);
 		}
 
@@ -244,6 +283,7 @@ namespace OsuBeatmapMixer {
 		private void ExecuteButton_Click(object sender, EventArgs e) {
 			AllControlChange(false);
 
+			ChangeLanguageButton.Visible = false;
 			ProgressBar1.Visible = true;
 
 			if (AllCheck()) {
@@ -320,6 +360,12 @@ namespace OsuBeatmapMixer {
 				throw e.Error;
 				#endif
 			}
+		}
+
+		private void ChangeLanguageButton_Click(object sender, EventArgs e) {
+			System.Diagnostics.Process.Start(Application.ExecutablePath, messageData.ChangeLang);
+
+			Application.Exit();
 		}
 	}
 }

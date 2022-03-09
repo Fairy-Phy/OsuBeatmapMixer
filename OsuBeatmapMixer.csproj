@@ -98,6 +98,16 @@
   <ItemGroup>
     <Compile Include="Audio\DelayFadeOutSampleProvider.cs" />
     <Compile Include="Audio\Mixer.cs" />
+    <Compile Include="Backup\Resourceen_bak.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resourceen_bak.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Backup\Resourceja_bak.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resourceja_bak.resx</DependentUpon>
+    </Compile>
     <Compile Include="BeatmapQueue.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
@@ -116,6 +126,14 @@
     <Compile Include="Osu\TimingPoint.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="Backup\Resourceen_bak.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resourceen_bak.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Backup\Resourceja_bak.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resourceja_bak.Designer.cs</LastGenOutput>
+    </None>
     <EmbeddedResource Include="MainForm.ja-JP.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>

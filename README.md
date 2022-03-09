@@ -15,6 +15,8 @@ Unzip the zip file and open the exe file in it to run it.
 
 ## Usage
 
+If the Japanese version is displayed, you can change it manually from the button in the lower right corner.
+
 ![image](./windowsample.png)
 
 ### Warning

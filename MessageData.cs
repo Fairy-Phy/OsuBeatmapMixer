@@ -9,6 +9,8 @@ namespace OsuBeatmapMixer {
 
 	class MessageData {
 
+		internal string ChangeLang { get; }
+
 		internal string MessageWarning { get; }
 
 		internal string MessageError { get; }
@@ -56,6 +58,7 @@ namespace OsuBeatmapMixer {
 		internal MessageData() {
 			ComponentResourceManager resources = new ComponentResourceManager(typeof(MainForm));
 
+			ChangeLang = resources.GetString(nameof(ChangeLang));
 			MessageWarning = resources.GetString(nameof(MessageWarning));
 			MessageError = resources.GetString(nameof(MessageError));
 			MessageConfirmation = resources.GetString(nameof(MessageConfirmation));

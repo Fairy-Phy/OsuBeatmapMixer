@@ -189,7 +189,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Beatmaps.ZOrder" xml:space="preserve">
-    <value>31</value>
+    <value>32</value>
   </data>
   <data name="Beatmaps_Label.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -219,7 +219,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Beatmaps_Label.ZOrder" xml:space="preserve">
-    <value>30</value>
+    <value>31</value>
   </data>
   <data name="Beatmap_Add.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 9pt</value>
@@ -246,7 +246,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Beatmap_Add.ZOrder" xml:space="preserve">
-    <value>29</value>
+    <value>30</value>
   </data>
   <data name="OpenOsuFileDialog.TrayLocation" type="System.Drawing.Point, System.Drawing">
     <value>17, 17</value>
@@ -292,7 +292,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;BeatmapOrderUp.ZOrder" xml:space="preserve">
-    <value>28</value>
+    <value>29</value>
   </data>
   <data name="BeatmapOrderDown.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 10pt</value>
@@ -325,7 +325,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;BeatmapOrderDown.ZOrder" xml:space="preserve">
-    <value>27</value>
+    <value>28</value>
   </data>
   <data name="BeatmapDeleteButton.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 9pt</value>
@@ -355,7 +355,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;BeatmapDeleteButton.ZOrder" xml:space="preserve">
-    <value>26</value>
+    <value>27</value>
   </data>
   <data name="TiTleLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -385,7 +385,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;TiTleLabel.ZOrder" xml:space="preserve">
-    <value>25</value>
+    <value>26</value>
   </data>
   <data name="TitleTextBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 12pt</value>
@@ -409,7 +409,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;TitleTextBox.ZOrder" xml:space="preserve">
-    <value>24</value>
+    <value>25</value>
   </data>
   <data name="ArtistLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -439,7 +439,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ArtistLabel.ZOrder" xml:space="preserve">
-    <value>23</value>
+    <value>24</value>
   </data>
   <data name="ArtistTextBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 12pt</value>
@@ -463,7 +463,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ArtistTextBox.ZOrder" xml:space="preserve">
-    <value>22</value>
+    <value>23</value>
   </data>
   <data name="HPLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -493,7 +493,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;HPLabel.ZOrder" xml:space="preserve">
-    <value>21</value>
+    <value>22</value>
   </data>
   <data name="ODLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -523,7 +523,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ODLabel.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>21</value>
   </data>
   <data name="ARLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -553,7 +553,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ARLabel.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>18</value>
   </data>
   <data name="SourceTextBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 12pt</value>
@@ -577,7 +577,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;SourceTextBox.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>15</value>
   </data>
   <data name="SourceLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -607,7 +607,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;SourceLabel.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>16</value>
   </data>
   <data name="TagsLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -637,7 +637,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;TagsLabel.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
   <data name="ProgressBar1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Bottom</value>
@@ -664,7 +664,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ProgressBar1.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="ExecuteButton.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 15pt, style=Bold</value>
@@ -691,7 +691,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ExecuteButton.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="BackgroundWorker1.TrayLocation" type="System.Drawing.Point, System.Drawing">
     <value>372, 17</value>
@@ -724,7 +724,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;CSLabel.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="SongDurationNum.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 12pt</value>
@@ -748,7 +748,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;SongDurationNum.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="SongDurationLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -778,7 +778,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;SongDurationLabel.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="HPNum.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 12pt</value>
@@ -805,7 +805,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;HPNum.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>20</value>
   </data>
   <data name="ODNum.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 12pt</value>
@@ -832,7 +832,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ODNum.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>19</value>
   </data>
   <data name="ARNum.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 12pt</value>
@@ -859,7 +859,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ARNum.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>17</value>
   </data>
   <data name="CSNum.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 12pt</value>
@@ -886,7 +886,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;CSNum.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="CreatorTextBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 12pt</value>
@@ -910,7 +910,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;CreatorTextBox.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="CreatorLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -940,7 +940,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;CreatorLabel.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="DifficultyTextBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 12pt</value>
@@ -964,7 +964,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;DifficultyTextBox.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="DifficultyLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -994,7 +994,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;DifficultyLabel.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="TagsTextBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 12pt</value>
@@ -1018,7 +1018,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;TagsTextBox.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="SliderTickRateNum.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 12pt</value>
@@ -1042,7 +1042,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;SliderTickRateNum.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="SliderTickRateLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1072,7 +1072,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;SliderTickRateLabel.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="SaveOszFileDialog.TrayLocation" type="System.Drawing.Point, System.Drawing">
     <value>540, 17</value>
@@ -1082,6 +1082,39 @@
   </data>
   <data name="SaveOszFileDialog.Title" xml:space="preserve">
     <value>Select save mp3 file path</value>
+  </data>
+  <data name="ChangeLanguageButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="ChangeLanguageButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 10pt</value>
+  </data>
+  <data name="ChangeLanguageButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>688, 421</value>
+  </data>
+  <data name="ChangeLanguageButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 29</value>
+  </data>
+  <data name="ChangeLanguageButton.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="ChangeLanguageButton.Text" xml:space="preserve">
+    <value>日本語にする</value>
+  </data>
+  <data name="&gt;&gt;ChangeLanguageButton.Name" xml:space="preserve">
+    <value>ChangeLanguageButton</value>
+  </data>
+  <data name="&gt;&gt;ChangeLanguageButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ChangeLanguageButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ChangeLanguageButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="$this.Language" type="System.Globalization.CultureInfo, mscorlib">
+    <value>ja-JP</value>
   </data>
   <data name="$this.Localizable" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1158,8 +1191,14 @@
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="ChangeLang" xml:space="preserve">
+    <value>ja-JP</value>
+  </data>
   <data name="ConfirmationText1" xml:space="preserve">
     <value>Are you sure you want to delete selected beatmap?</value>
+  </data>
+  <data name="ConfirmationText2" xml:space="preserve">
+    <value>Are you sure you want to save the file in the folder at the following location?</value>
   </data>
   <data name="ErrorText1" xml:space="preserve">
     <value>At least 2 beatmaps are required for execution.</value>
@@ -1179,6 +1218,9 @@
   <data name="ErrorText6" xml:space="preserve">
     <value>Please specify the location of the mp3 file.</value>
   </data>
+  <data name="ErrorText7" xml:space="preserve">
+    <value>The process has been canceled.</value>
+  </data>
   <data name="FinishedText1" xml:space="preserve">
     <value>Mix Successful!</value>
   </data>
@@ -1196,12 +1238,6 @@
   </data>
   <data name="WarningText1" xml:space="preserve">
     <value>The same beatmap already exists in the list. Are you sure you want to add it?</value>
-  </data>
-  <data name="ConfirmationText2" xml:space="preserve">
-    <value>Are you sure you want to save the file in the folder at the following location?</value>
-  </data>
-  <data name="ErrorText7" xml:space="preserve">
-    <value>The process has been canceled.</value>
   </data>
   <data name="WarningText2" xml:space="preserve">
     <value>{0} already exists. Are you sure you want to overwrite it?</value>
