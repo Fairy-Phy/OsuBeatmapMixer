@@ -10,6 +10,16 @@ If the change is only slight, the third digit is raised.
 
 ***
 
+## [1.1.1](https://github.com/Fairy-Phy/OsuBeatmapMixer/tree/1.1.1) - 2022-03-09
+
+### Change
+
+* If CurrentCulture is not ja-JP, it is basically changed to en-US.
+
+### Fixed
+
+* Fix Parse and ToString format is InvariantCulture.
+
 ## [1.1.0](https://github.com/Fairy-Phy/OsuBeatmapMixer/tree/1.1.0) - 2022-03-09
 
 ### Added
