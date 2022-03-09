@@ -10,7 +10,7 @@ If the change is only slight, the third digit is raised.
 
 ***
 
-## [1.1.0](https://github.com/Fairy-Phy/OsuBeatmapMixer/tree/1.0.0) - 2022-03-08
+## [1.1.0](https://github.com/Fairy-Phy/OsuBeatmapMixer/tree/1.1.0) - 2022-03-08
 
 ### Added
 
