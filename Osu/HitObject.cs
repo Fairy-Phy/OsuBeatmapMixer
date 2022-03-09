@@ -80,19 +80,19 @@ namespace OsuBeatmapMixer.Osu {
 		public override string ToString() {
 			switch (Object) {
 				case ObjectType.ShortNormal:
-					return $"{X},{Y},{StartOffset},{Type},{HitSound}";
+					return FormattableString.Invariant($"{X},{Y},{StartOffset},{Type},{HitSound}");
 				case ObjectType.Normal:
-					return $"{X},{Y},{StartOffset},{Type},{HitSound},{HitSample}";
+					return FormattableString.Invariant($"{X},{Y},{StartOffset},{Type},{HitSound},{HitSample}");
 				case ObjectType.Slider:
-					return $"{X},{Y},{StartOffset},{Type},{HitSound},{SliderSetting},{HitSample}";
+					return FormattableString.Invariant($"{X},{Y},{StartOffset},{Type},{HitSound},{SliderSetting},{HitSample}");
 				case ObjectType.ShortSlider:
-					return $"{X},{Y},{StartOffset},{Type},{HitSound},{SliderSetting}";
+					return FormattableString.Invariant($"{X},{Y},{StartOffset},{Type},{HitSound},{SliderSetting}");
 				case ObjectType.ShortSpinner:
-					return $"{X},{Y},{StartOffset},{Type},{HitSound},{EndOffset}";
+					return FormattableString.Invariant($"{X},{Y},{StartOffset},{Type},{HitSound},{EndOffset}");
 				case ObjectType.Spinner:
-					return $"{X},{Y},{StartOffset},{Type},{HitSound},{EndOffset},{HitSample}";
+					return FormattableString.Invariant($"{X},{Y},{StartOffset},{Type},{HitSound},{EndOffset},{HitSample}");
 				case ObjectType.ManiaLN:
-					return $"{X},{Y},{(StartOffset <= -1000000000 ? "NaN" : StartOffset.ToString())},{Type},{HitSound},{EndOffset}:{HitSample}";
+					return FormattableString.Invariant($"{X},{Y},{(StartOffset <= -1000000000 ? "NaN" : StartOffset.ToString(System.Globalization.CultureInfo.InvariantCulture))},{Type},{HitSound},{EndOffset}:{HitSample}");
 				default:
 					throw new ArgumentException("Unknown ObjectType");
 			}

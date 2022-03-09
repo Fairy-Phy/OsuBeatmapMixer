@@ -124,6 +124,7 @@
     <Compile Include="Osu\ParseException.cs" />
     <Compile Include="Osu\Parser.cs" />
     <Compile Include="Osu\TimingPoint.cs" />
+    <Compile Include="Osu\Utils.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <None Include="Backup\Resourceen_bak.resx">

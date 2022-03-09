@@ -4,6 +4,7 @@ using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static OsuBeatmapMixer.Osu.Utils;
 
 namespace OsuBeatmapMixer.Osu {
 
@@ -219,7 +220,7 @@ namespace OsuBeatmapMixer.Osu {
 		}
 
 		void DictionaryAddAppend(ref Dictionary<double, int> dic, double key, int value) {
-			double AddKey = double.Parse(key.ToString(), NumberStyles.Float, CultureInfo.InvariantCulture);
+			double AddKey = DoubleParse(key.ToString(CultureInfo.InvariantCulture));
 			if (!dic.ContainsKey(AddKey))
 				dic.Add(AddKey, value);
 			else dic[AddKey] += value;

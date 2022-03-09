@@ -303,7 +303,7 @@ namespace OsuBeatmapMixer {
 
 			string ExportOsuName = $"{ArtistTextBox.Text} - {TitleTextBox.Text} ({CreatorTextBox.Text}) [{DifficultyTextBox.Text}].osu";
 			for (int i = 0; i < InvalidChars.Count; i++)
-				ExportOsuName = ExportOsuName.Replace(InvalidChars[i].ToString(), "");
+				ExportOsuName = ExportOsuName.Replace(InvalidChars[i].ToString(CultureInfo.InvariantCulture), "");
 			string ExportOsuPath = System.IO.Path.Combine(ExportDirPath, ExportOsuName);
 			if (System.IO.File.Exists(ExportOsuPath)) {
 				if (MessageBox.Show(string.Format(messageData.WarningText2, ExportOsuPath), messageData.MessageWarning, MessageBoxButtons.YesNo, MessageBoxIcon.Warning) != DialogResult.Yes) {

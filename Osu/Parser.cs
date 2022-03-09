@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static OsuBeatmapMixer.Osu.Utils;
 
 namespace OsuBeatmapMixer.Osu {
 
@@ -160,7 +161,7 @@ namespace OsuBeatmapMixer.Osu {
 			if (UnInherited == 0) BeatLength = Math.Abs(BeatLength);
 
 			beatmap.TimingPoints.Add(new TimingPoint(
-				(int) decimal.Parse(TextSplit[0]),
+				ParseToInt(TextSplit[0]),
 				BeatLength,
 				ParseToInt(TextSplit[2]),
 				ParseToInt(TextSplit[3]),
@@ -310,16 +311,6 @@ namespace OsuBeatmapMixer.Osu {
 			TimingPoints.Sort((a, b) => b.Offset - a.Offset);
 
 			return TimingPoints[0];
-		}
-
-		static double DoubleParse(string Value) {
-			if (double.TryParse(Value, NumberStyles.Float, CultureInfo.InvariantCulture, out double Res))
-				return Res;
-			return double.NaN;
-		}
-
-		static int ParseToInt(string Value) {
-			return (int) DoubleParse(Value);
 		}
 	}
 }

@@ -52,7 +52,7 @@ namespace OsuBeatmapMixer.Osu {
 		}
 
 		public override string ToString() {
-			return $"{Offset},{(Uninherited == 0 ? -BeatLength : BeatLength)},{Meter},{SampleSet},{SampleIndex},{Volume},{Uninherited},{Effects}";
+			return FormattableString.Invariant($"{Offset},{(Uninherited == 0 ? -BeatLength : BeatLength)},{Meter},{SampleSet},{SampleIndex},{Volume},{Uninherited},{Effects}");
 		}
 	}
 }
