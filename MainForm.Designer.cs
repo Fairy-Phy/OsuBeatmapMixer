@@ -29,6 +29,7 @@ namespace OsuBeatmapMixer {
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
 			this.Beatmaps = new System.Windows.Forms.DataGridView();
 			this.orderDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.offsetDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.artistDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.titleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Creator = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -90,11 +91,13 @@ namespace OsuBeatmapMixer {
 			this.Beatmaps.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.Beatmaps.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.Beatmaps.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.orderDataGridViewTextBoxColumn,
-            this.artistDataGridViewTextBoxColumn,
-            this.titleDataGridViewTextBoxColumn,
-            this.Creator,
-            this.diffNameDataGridViewTextBoxColumn});
+				this.orderDataGridViewTextBoxColumn,
+				this.offsetDataGridViewTextBoxColumn,
+				this.artistDataGridViewTextBoxColumn,
+				this.titleDataGridViewTextBoxColumn,
+				this.Creator,
+				this.diffNameDataGridViewTextBoxColumn
+			});
 			this.Beatmaps.DataSource = this.beatmapQueueBindingSource;
 			dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
 			dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
@@ -108,7 +111,6 @@ namespace OsuBeatmapMixer {
 			resources.ApplyResources(this.Beatmaps, "Beatmaps");
 			this.Beatmaps.MultiSelect = false;
 			this.Beatmaps.Name = "Beatmaps";
-			this.Beatmaps.ReadOnly = true;
 			this.Beatmaps.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
 			this.Beatmaps.RowHeadersVisible = false;
 			this.Beatmaps.RowTemplate.Height = 21;
@@ -122,6 +124,15 @@ namespace OsuBeatmapMixer {
 			resources.ApplyResources(this.orderDataGridViewTextBoxColumn, "orderDataGridViewTextBoxColumn");
 			this.orderDataGridViewTextBoxColumn.Name = "orderDataGridViewTextBoxColumn";
 			this.orderDataGridViewTextBoxColumn.ReadOnly = true;
+
+			// 
+			// offsetDataGridViewTextBoxColumn
+			// 
+			this.offsetDataGridViewTextBoxColumn.DataPropertyName = "Offset";
+			this.offsetDataGridViewTextBoxColumn.FillWeight = 20F;
+			resources.ApplyResources(this.offsetDataGridViewTextBoxColumn, "offsetDataGridViewTextBoxColumn");
+			this.offsetDataGridViewTextBoxColumn.Name = "offsetDataGridViewTextBoxColumn";
+			this.offsetDataGridViewTextBoxColumn.ReadOnly = false;
 			// 
 			// artistDataGridViewTextBoxColumn
 			// 
@@ -518,6 +529,7 @@ namespace OsuBeatmapMixer {
 		private System.Windows.Forms.Label SliderTickRateLabel;
 		private System.Windows.Forms.SaveFileDialog SaveOszFileDialog;
 		private System.Windows.Forms.DataGridViewTextBoxColumn orderDataGridViewTextBoxColumn;
+		private System.Windows.Forms.DataGridViewTextBoxColumn offsetDataGridViewTextBoxColumn;
 		private System.Windows.Forms.DataGridViewTextBoxColumn artistDataGridViewTextBoxColumn;
 		private System.Windows.Forms.DataGridViewTextBoxColumn titleDataGridViewTextBoxColumn;
 		private System.Windows.Forms.DataGridViewTextBoxColumn Creator;

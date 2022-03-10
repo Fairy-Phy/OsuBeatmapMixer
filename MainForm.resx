@@ -166,6 +166,15 @@
   <data name="diffNameDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
     <value>70</value>
   </data>
+  <data name="offsetDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Offset</value>
+  </data>
+  <data name="offsetDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="offsetDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="beatmapQueueBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing">
     <value>153, 17</value>
@@ -1159,6 +1168,12 @@
     <value>diffNameDataGridViewTextBoxColumn</value>
   </data>
   <data name="&gt;&gt;diffNameDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;offsetDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>offsetDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;offsetDataGridViewTextBoxColumn.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;beatmapQueueBindingSource.Name" xml:space="preserve">

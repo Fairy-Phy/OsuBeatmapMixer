@@ -11,6 +11,8 @@ namespace OsuBeatmapMixer {
 
 		public int Order { get; set; }
 
+		public int Offset { get; set; }
+
 		public string Artist => Beatmap.Artist;
 
 		public string Title => Beatmap.Title;
@@ -25,6 +27,7 @@ namespace OsuBeatmapMixer {
 
 		public BeatmapQueue(string Path) {
 			Beatmap = Parser.ParseBeatmap(Path);
+			Beatmap.Offset = Offset;
 			DirPath = System.IO.Path.GetDirectoryName(Path);
 		}
 

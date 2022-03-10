@@ -26,6 +26,7 @@ namespace OsuBeatmapMixer.Osu {
 			Duration = duration;
 			Beatmaps = new List<Beatmap>();
 			foreach (var beatmapQueue in beatmapQueues) {
+				beatmapQueue.Beatmap.Offset = beatmapQueue.Offset;
 				Beatmaps.Add(beatmapQueue.Beatmap);
 			}
 		}
@@ -50,6 +51,7 @@ namespace OsuBeatmapMixer.Osu {
 			int AppendOffset = 0;
 			for (int i = 0; i < Beatmaps.Count; i++) {
 				Beatmap beatmap = Beatmaps[i];
+				AppendOffset += beatmap.Offset;
 
 				double AverageBPM = GetAverageBPM(beatmap).Key;
 				double BPMScale = MixedAverageBPM / AverageBPM;
@@ -163,6 +165,7 @@ namespace OsuBeatmapMixer.Osu {
 					}
 				}
 				AppendOffset += GetLastNotesOffset(beatmap) + EndBPMChange;
+				AppendOffset -= beatmap.Offset;
 
 				ReportProgress((int) (((double) (i + 1) / Beatmaps.Count) * OnceProcessPersent));
 			}
@@ -205,6 +208,7 @@ namespace OsuBeatmapMixer.Osu {
 			int AppendOffset = 0;
 			for (int i = 0; i < Beatmaps.Count; i++) {
 				Beatmap beatmap = Beatmaps[i];
+				AppendOffset += beatmap.Offset;
 
 				int SubOffset = 0;
 				if (i != 0) SubOffset = beatmap.HitObjects[0].StartOffset;
@@ -215,6 +219,7 @@ namespace OsuBeatmapMixer.Osu {
 				}
 
 				AppendOffset += GetLastNotesOffset(beatmap) - SubOffset + Duration;
+				AppendOffset -= beatmap.Offset;
 				ReportProgress((int) (((double) (i + 1) / Beatmaps.Count) * OnceProcessPersent) + OnceProcessPersent);
 			}
 		}
