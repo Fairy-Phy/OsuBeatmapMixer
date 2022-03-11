@@ -25,10 +25,9 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>1</ApplicationRevision>
-    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.2.0.0</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
-    <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -49,18 +48,6 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup>
-    <ManifestCertificateThumbprint>E24FA1EF7A7F3C98B6BAB96F0C02A437571CCA66</ManifestCertificateThumbprint>
-  </PropertyGroup>
-  <PropertyGroup>
-    <ManifestKeyFile>OsuBeatmapMixer_TemporaryKey.pfx</ManifestKeyFile>
-  </PropertyGroup>
-  <PropertyGroup>
-    <GenerateManifests>true</GenerateManifests>
-  </PropertyGroup>
-  <PropertyGroup>
-    <SignManifests>true</SignManifests>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Win32.Registry, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
@@ -111,6 +98,16 @@
   <ItemGroup>
     <Compile Include="Audio\DelayFadeOutSampleProvider.cs" />
     <Compile Include="Audio\Mixer.cs" />
+    <None Include="Backup\Resourceen_bak.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resourceen_bak.resx</DependentUpon>
+    </None>
+    <None Include="Backup\Resourceja_bak.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resourceja_bak.resx</DependentUpon>
+    </None>
     <Compile Include="BeatmapQueue.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
@@ -130,6 +127,14 @@
     <Compile Include="Osu\Utils.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="Backup\Resourceen_bak.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resourceen_bak.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Backup\Resourceja_bak.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resourceja_bak.Designer.cs</LastGenOutput>
+    </None>
     <EmbeddedResource Include="MainForm.ja-JP.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -148,7 +153,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="OsuBeatmapMixer_TemporaryKey.pfx" />
     <None Include="packages.config" />
     <None Include="Properties\DataSources\BeatmapQueue.datasource" />
     <None Include="Properties\Settings.settings">
@@ -175,9 +179,6 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Backup\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\NAudio.Lame.2.0.1\build\NAudio.Lame.targets" Condition="Exists('packages\NAudio.Lame.2.0.1\build\NAudio.Lame.targets')" />

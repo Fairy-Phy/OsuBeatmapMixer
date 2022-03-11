@@ -42,6 +42,7 @@ namespace OsuBeatmapMixer.Osu {
 		internal List<TimingPoint> TimingPoints { get;}
 
 		internal List<HitObject> HitObjects { get; }
+
 		internal int Offset { get; set; } = 0;
 
 		internal Beatmap() {

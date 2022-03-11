@@ -10,6 +10,12 @@ If the change is only slight, the third digit is raised.
 
 ***
 
+## [1.2.0](https://github.com/Fairy-Phy/OsuBeatmapMixer/tree/1.2.0) - 2022-03-12
+
+### Added
+
+* Add offset specified for each map. (by [Adrriii](https://github.com/Adrriii))
+
 ## [1.1.1](https://github.com/Fairy-Phy/OsuBeatmapMixer/tree/1.1.1) - 2022-03-09
 
 ### Change
