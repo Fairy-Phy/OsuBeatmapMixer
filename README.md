@@ -31,6 +31,10 @@ If the Japanese version is displayed, you can change it manually from the button
 
 Clicking the "Add" button at the bottom of the center of the screen will bring up a file selection screen, where you can select an osu file to add a beatmap. If you want to change the playback order, select the beatmap you want to change and press the up/down buttons displayed below.
 
+#### Added since version 1.2.0
+
+You can specify a local offset for each beatmap by clicking on the offset column for each beatmap!
+
 ### 2, Enter the Metadata and Difficulty
 
 Enter the metadata on the right; the CS(Key) field is ignored in Mania mode. At least the artist name and title are required to run.
